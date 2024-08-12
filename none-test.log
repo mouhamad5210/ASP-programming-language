@@ -1,0 +1,14 @@
+None == None ==>
+Trace line 3: True
+None != 15 ==>
+Trace line 4: True
+3.140000 == None ==>
+Trace line 5: False
+"None" != None ==>
+Trace line 6: True
+True == None ==>
+Trace line 7: False
+[1, 2, 3] != None ==>
+Trace line 8: True
+{"Ja":17, "Nei":9, "Vet ikke":1} == None ==>
+Trace line 9: False

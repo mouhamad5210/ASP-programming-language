@@ -1,0 +1,24 @@
+"Testing integer expressions:" ==>
+Trace line 1: 'Testing integer expressions:'
+42 ==>
+Trace line 2: 42
+- 1017 ==>
+Trace line 3: -1017
+2 + 5 * 7 ==>
+Trace line 4: 37
+(3 - 1) * 3 ==>
+Trace line 5: 6
+"Testing string expressions:" ==>
+Trace line 7: 'Testing string expressions:'
+"Abc" ==>
+Trace line 8: 'Abc'
+"A" + "z" ==>
+Trace line 9: 'Az'
+"!" * 3 ==>
+Trace line 10: '!!!'
+"Testing comparisons:" ==>
+Trace line 12: 'Testing comparisons:'
+1 <= 10 ==>
+Trace line 13: True
+"a" == "A" ==>
+Trace line 14: False

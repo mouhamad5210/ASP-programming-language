@@ -1,0 +1,1172 @@
+<program>
+   1: 
+   2: # Finn alle primtall opp til n
+   3: # ved hjelp av teknikken kalt «Eratosthenes' sil».
+   4: 
+   5: n = 1000
+  <stmt>
+    <small stmt list>
+      <small stmt>
+        <assignment>
+          <name>
+          </name>
+          <expr>
+            <and test>
+              <not test>
+                <comparison>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <integer literal>
+                          </integer literal>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                </comparison>
+              </not test>
+            </and test>
+          </expr>
+        </assignment>
+      </small stmt>
+    </small stmt list>
+  </stmt>
+   6: primes = [True] * (n+1)
+  <stmt>
+    <small stmt list>
+      <small stmt>
+        <assignment>
+          <name>
+          </name>
+          <expr>
+            <and test>
+              <not test>
+                <comparison>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <list display>
+                            <expr>
+                              <and test>
+                                <not test>
+                                  <comparison>
+                                    <term>
+                                      <factor>
+                                        <primary>
+                                          <atom>
+                                            <boolean literal>
+                                            </boolean literal>
+                                          </atom>
+                                        </primary>
+                                      </factor>
+                                    </term>
+                                  </comparison>
+                                </not test>
+                              </and test>
+                            </expr>
+                          </list display>
+                        </atom>
+                      </primary>
+                      <factor opr>
+                      </factor opr>
+                      <primary>
+                        <atom>
+                          <inner expr>
+                            <expr>
+                              <and test>
+                                <not test>
+                                  <comparison>
+                                    <term>
+                                      <factor>
+                                        <primary>
+                                          <atom>
+                                            <name>
+                                            </name>
+                                          </atom>
+                                        </primary>
+                                      </factor>
+                                      <term opr>
+                                      </term opr>
+                                      <factor>
+                                        <primary>
+                                          <atom>
+                                            <integer literal>
+                                            </integer literal>
+                                          </atom>
+                                        </primary>
+                                      </factor>
+                                    </term>
+                                  </comparison>
+                                </not test>
+                              </and test>
+                            </expr>
+                          </inner expr>
+                        </atom>
+                      </primary>
+                    </factor>
+                  </term>
+                </comparison>
+              </not test>
+            </and test>
+          </expr>
+        </assignment>
+      </small stmt>
+    </small stmt list>
+  </stmt>
+   7: 
+   8: def find_primes ():
+  <stmt>
+    <compound stmt>
+      <func def>
+        <name>
+        </name>
+        <suite>
+   9:    for i1 in range(2,n+1):
+          <stmt>
+            <compound stmt>
+              <for stmt>
+                <name>
+                </name>
+                <expr>
+                  <and test>
+                    <not test>
+                      <comparison>
+                        <term>
+                          <factor>
+                            <primary>
+                              <atom>
+                                <name>
+                                </name>
+                              </atom>
+                              <primary suffix>
+                                <arguments>
+                                  <expr>
+                                    <and test>
+                                      <not test>
+                                        <comparison>
+                                          <term>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <integer literal>
+                                                  </integer literal>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                          </term>
+                                        </comparison>
+                                      </not test>
+                                    </and test>
+                                  </expr>
+                                  <expr>
+                                    <and test>
+                                      <not test>
+                                        <comparison>
+                                          <term>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <name>
+                                                  </name>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                            <term opr>
+                                            </term opr>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <integer literal>
+                                                  </integer literal>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                          </term>
+                                        </comparison>
+                                      </not test>
+                                    </and test>
+                                  </expr>
+                                </arguments>
+                              </primary suffix>
+                            </primary>
+                          </factor>
+                        </term>
+                      </comparison>
+                    </not test>
+                  </and test>
+                </expr>
+                <suite>
+  10:       i2 = i1 * i1
+                  <stmt>
+                    <small stmt list>
+                      <small stmt>
+                        <assignment>
+                          <name>
+                          </name>
+                          <expr>
+                            <and test>
+                              <not test>
+                                <comparison>
+                                  <term>
+                                    <factor>
+                                      <primary>
+                                        <atom>
+                                          <name>
+                                          </name>
+                                        </atom>
+                                      </primary>
+                                      <factor opr>
+                                      </factor opr>
+                                      <primary>
+                                        <atom>
+                                          <name>
+                                          </name>
+                                        </atom>
+                                      </primary>
+                                    </factor>
+                                  </term>
+                                </comparison>
+                              </not test>
+                            </and test>
+                          </expr>
+                        </assignment>
+                      </small stmt>
+                    </small stmt list>
+                  </stmt>
+  11:       while i2 <= n:
+                  <stmt>
+                    <compound stmt>
+                      <while stmt>
+                        <expr>
+                          <and test>
+                            <not test>
+                              <comparison>
+                                <term>
+                                  <factor>
+                                    <primary>
+                                      <atom>
+                                        <name>
+                                        </name>
+                                      </atom>
+                                    </primary>
+                                  </factor>
+                                </term>
+                                <comp opr>
+                                </comp opr>
+                                <term>
+                                  <factor>
+                                    <primary>
+                                      <atom>
+                                        <name>
+                                        </name>
+                                      </atom>
+                                    </primary>
+                                  </factor>
+                                </term>
+                              </comparison>
+                            </not test>
+                          </and test>
+                        </expr>
+                        <suite>
+  12:          primes[i2] = False
+                          <stmt>
+                            <small stmt list>
+                              <small stmt>
+                                <assignment>
+                                  <name>
+                                  </name>
+                                  <subscription>
+                                    <expr>
+                                      <and test>
+                                        <not test>
+                                          <comparison>
+                                            <term>
+                                              <factor>
+                                                <primary>
+                                                  <atom>
+                                                    <name>
+                                                    </name>
+                                                  </atom>
+                                                </primary>
+                                              </factor>
+                                            </term>
+                                          </comparison>
+                                        </not test>
+                                      </and test>
+                                    </expr>
+                                  </subscription>
+                                  <expr>
+                                    <and test>
+                                      <not test>
+                                        <comparison>
+                                          <term>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <boolean literal>
+                                                  </boolean literal>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                          </term>
+                                        </comparison>
+                                      </not test>
+                                    </and test>
+                                  </expr>
+                                </assignment>
+                              </small stmt>
+                            </small stmt list>
+                          </stmt>
+  13:          i2 = i2 + i1
+                          <stmt>
+                            <small stmt list>
+                              <small stmt>
+                                <assignment>
+                                  <name>
+                                  </name>
+                                  <expr>
+                                    <and test>
+                                      <not test>
+                                        <comparison>
+                                          <term>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <name>
+                                                  </name>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                            <term opr>
+                                            </term opr>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <name>
+                                                  </name>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                          </term>
+                                        </comparison>
+                                      </not test>
+                                    </and test>
+                                  </expr>
+                                </assignment>
+                              </small stmt>
+                            </small stmt list>
+                          </stmt>
+  14: 
+  15: def format (n, w):
+                        </suite>
+                      </while stmt>
+                    </compound stmt>
+                  </stmt>
+                </suite>
+              </for stmt>
+            </compound stmt>
+          </stmt>
+        </suite>
+      </func def>
+    </compound stmt>
+  </stmt>
+  <stmt>
+    <compound stmt>
+      <func def>
+        <name>
+        </name>
+        <name>
+        </name>
+        <name>
+        </name>
+        <suite>
+  16:    res = str(n)
+          <stmt>
+            <small stmt list>
+              <small stmt>
+                <assignment>
+                  <name>
+                  </name>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <name>
+                                  </name>
+                                </atom>
+                                <primary suffix>
+                                  <arguments>
+                                    <expr>
+                                      <and test>
+                                        <not test>
+                                          <comparison>
+                                            <term>
+                                              <factor>
+                                                <primary>
+                                                  <atom>
+                                                    <name>
+                                                    </name>
+                                                  </atom>
+                                                </primary>
+                                              </factor>
+                                            </term>
+                                          </comparison>
+                                        </not test>
+                                      </and test>
+                                    </expr>
+                                  </arguments>
+                                </primary suffix>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </assignment>
+              </small stmt>
+            </small stmt list>
+          </stmt>
+  17:    while len(res) < w: res = ' '+res
+          <stmt>
+            <compound stmt>
+              <while stmt>
+                <expr>
+                  <and test>
+                    <not test>
+                      <comparison>
+                        <term>
+                          <factor>
+                            <primary>
+                              <atom>
+                                <name>
+                                </name>
+                              </atom>
+                              <primary suffix>
+                                <arguments>
+                                  <expr>
+                                    <and test>
+                                      <not test>
+                                        <comparison>
+                                          <term>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <name>
+                                                  </name>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                          </term>
+                                        </comparison>
+                                      </not test>
+                                    </and test>
+                                  </expr>
+                                </arguments>
+                              </primary suffix>
+                            </primary>
+                          </factor>
+                        </term>
+                        <comp opr>
+                        </comp opr>
+                        <term>
+                          <factor>
+                            <primary>
+                              <atom>
+                                <name>
+                                </name>
+                              </atom>
+                            </primary>
+                          </factor>
+                        </term>
+                      </comparison>
+                    </not test>
+                  </and test>
+                </expr>
+                <suite>
+                  <small stmt list>
+                    <small stmt>
+                      <assignment>
+                        <name>
+                        </name>
+                        <expr>
+                          <and test>
+                            <not test>
+                              <comparison>
+                                <term>
+                                  <factor>
+                                    <primary>
+                                      <atom>
+                                        <string literal>
+                                        </string literal>
+                                      </atom>
+                                    </primary>
+                                  </factor>
+                                  <term opr>
+                                  </term opr>
+                                  <factor>
+                                    <primary>
+                                      <atom>
+                                        <name>
+                                        </name>
+                                      </atom>
+                                    </primary>
+                                  </factor>
+                                </term>
+                              </comparison>
+                            </not test>
+                          </and test>
+                        </expr>
+                      </assignment>
+                    </small stmt>
+                  </small stmt list>
+                </suite>
+              </while stmt>
+            </compound stmt>
+          </stmt>
+  18:    return res
+          <stmt>
+            <small stmt list>
+              <small stmt>
+                <return stmt>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <name>
+                                  </name>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </return stmt>
+              </small stmt>
+            </small stmt list>
+          </stmt>
+  19: 
+  20: def list_primes():
+        </suite>
+      </func def>
+    </compound stmt>
+  </stmt>
+  <stmt>
+    <compound stmt>
+      <func def>
+        <name>
+        </name>
+        <suite>
+  21:     n_printed = 0
+          <stmt>
+            <small stmt list>
+              <small stmt>
+                <assignment>
+                  <name>
+                  </name>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <integer literal>
+                                  </integer literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </assignment>
+              </small stmt>
+            </small stmt list>
+          </stmt>
+  22:     line_buf = ''
+          <stmt>
+            <small stmt list>
+              <small stmt>
+                <assignment>
+                  <name>
+                  </name>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <string literal>
+                                  </string literal>
+                                </atom>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </assignment>
+              </small stmt>
+            </small stmt list>
+          </stmt>
+  23:     for i in range(2,n+1):
+          <stmt>
+            <compound stmt>
+              <for stmt>
+                <name>
+                </name>
+                <expr>
+                  <and test>
+                    <not test>
+                      <comparison>
+                        <term>
+                          <factor>
+                            <primary>
+                              <atom>
+                                <name>
+                                </name>
+                              </atom>
+                              <primary suffix>
+                                <arguments>
+                                  <expr>
+                                    <and test>
+                                      <not test>
+                                        <comparison>
+                                          <term>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <integer literal>
+                                                  </integer literal>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                          </term>
+                                        </comparison>
+                                      </not test>
+                                    </and test>
+                                  </expr>
+                                  <expr>
+                                    <and test>
+                                      <not test>
+                                        <comparison>
+                                          <term>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <name>
+                                                  </name>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                            <term opr>
+                                            </term opr>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <integer literal>
+                                                  </integer literal>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                          </term>
+                                        </comparison>
+                                      </not test>
+                                    </and test>
+                                  </expr>
+                                </arguments>
+                              </primary suffix>
+                            </primary>
+                          </factor>
+                        </term>
+                      </comparison>
+                    </not test>
+                  </and test>
+                </expr>
+                <suite>
+  24:        if primes[i]:
+                  <stmt>
+                    <compound stmt>
+                      <if stmt>
+                        <expr>
+                          <and test>
+                            <not test>
+                              <comparison>
+                                <term>
+                                  <factor>
+                                    <primary>
+                                      <atom>
+                                        <name>
+                                        </name>
+                                      </atom>
+                                      <primary suffix>
+                                        <subscription>
+                                          <expr>
+                                            <and test>
+                                              <not test>
+                                                <comparison>
+                                                  <term>
+                                                    <factor>
+                                                      <primary>
+                                                        <atom>
+                                                          <name>
+                                                          </name>
+                                                        </atom>
+                                                      </primary>
+                                                    </factor>
+                                                  </term>
+                                                </comparison>
+                                              </not test>
+                                            </and test>
+                                          </expr>
+                                        </subscription>
+                                      </primary suffix>
+                                    </primary>
+                                  </factor>
+                                </term>
+                              </comparison>
+                            </not test>
+                          </and test>
+                        </expr>
+                        <suite>
+  25:           if n_printed > 0 and n_printed%10 == 0:
+                          <stmt>
+                            <compound stmt>
+                              <if stmt>
+                                <expr>
+                                  <and test>
+                                    <not test>
+                                      <comparison>
+                                        <term>
+                                          <factor>
+                                            <primary>
+                                              <atom>
+                                                <name>
+                                                </name>
+                                              </atom>
+                                            </primary>
+                                          </factor>
+                                        </term>
+                                        <comp opr>
+                                        </comp opr>
+                                        <term>
+                                          <factor>
+                                            <primary>
+                                              <atom>
+                                                <integer literal>
+                                                </integer literal>
+                                              </atom>
+                                            </primary>
+                                          </factor>
+                                        </term>
+                                      </comparison>
+                                    </not test>
+                                    <not test>
+                                      <comparison>
+                                        <term>
+                                          <factor>
+                                            <primary>
+                                              <atom>
+                                                <name>
+                                                </name>
+                                              </atom>
+                                            </primary>
+                                            <factor opr>
+                                            </factor opr>
+                                            <primary>
+                                              <atom>
+                                                <integer literal>
+                                                </integer literal>
+                                              </atom>
+                                            </primary>
+                                          </factor>
+                                        </term>
+                                        <comp opr>
+                                        </comp opr>
+                                        <term>
+                                          <factor>
+                                            <primary>
+                                              <atom>
+                                                <integer literal>
+                                                </integer literal>
+                                              </atom>
+                                            </primary>
+                                          </factor>
+                                        </term>
+                                      </comparison>
+                                    </not test>
+                                  </and test>
+                                </expr>
+                                <suite>
+  26:              print(line_buf)
+                                  <stmt>
+                                    <small stmt list>
+                                      <small stmt>
+                                        <expr stmt>
+                                          <expr>
+                                            <and test>
+                                              <not test>
+                                                <comparison>
+                                                  <term>
+                                                    <factor>
+                                                      <primary>
+                                                        <atom>
+                                                          <name>
+                                                          </name>
+                                                        </atom>
+                                                        <primary suffix>
+                                                          <arguments>
+                                                            <expr>
+                                                              <and test>
+                                                                <not test>
+                                                                  <comparison>
+                                                                    <term>
+                                                                      <factor>
+                                                                        <primary>
+                                                                          <atom>
+                                                                            <name>
+                                                                            </name>
+                                                                          </atom>
+                                                                        </primary>
+                                                                      </factor>
+                                                                    </term>
+                                                                  </comparison>
+                                                                </not test>
+                                                              </and test>
+                                                            </expr>
+                                                          </arguments>
+                                                        </primary suffix>
+                                                      </primary>
+                                                    </factor>
+                                                  </term>
+                                                </comparison>
+                                              </not test>
+                                            </and test>
+                                          </expr>
+                                        </expr stmt>
+                                      </small stmt>
+                                    </small stmt list>
+                                  </stmt>
+  27:              line_buf = ''
+                                  <stmt>
+                                    <small stmt list>
+                                      <small stmt>
+                                        <assignment>
+                                          <name>
+                                          </name>
+                                          <expr>
+                                            <and test>
+                                              <not test>
+                                                <comparison>
+                                                  <term>
+                                                    <factor>
+                                                      <primary>
+                                                        <atom>
+                                                          <string literal>
+                                                          </string literal>
+                                                        </atom>
+                                                      </primary>
+                                                    </factor>
+                                                  </term>
+                                                </comparison>
+                                              </not test>
+                                            </and test>
+                                          </expr>
+                                        </assignment>
+                                      </small stmt>
+                                    </small stmt list>
+                                  </stmt>
+  28:           line_buf = line_buf + format(i,4)
+                                </suite>
+                              </if stmt>
+                            </compound stmt>
+                          </stmt>
+                          <stmt>
+                            <small stmt list>
+                              <small stmt>
+                                <assignment>
+                                  <name>
+                                  </name>
+                                  <expr>
+                                    <and test>
+                                      <not test>
+                                        <comparison>
+                                          <term>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <name>
+                                                  </name>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                            <term opr>
+                                            </term opr>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <name>
+                                                  </name>
+                                                </atom>
+                                                <primary suffix>
+                                                  <arguments>
+                                                    <expr>
+                                                      <and test>
+                                                        <not test>
+                                                          <comparison>
+                                                            <term>
+                                                              <factor>
+                                                                <primary>
+                                                                  <atom>
+                                                                    <name>
+                                                                    </name>
+                                                                  </atom>
+                                                                </primary>
+                                                              </factor>
+                                                            </term>
+                                                          </comparison>
+                                                        </not test>
+                                                      </and test>
+                                                    </expr>
+                                                    <expr>
+                                                      <and test>
+                                                        <not test>
+                                                          <comparison>
+                                                            <term>
+                                                              <factor>
+                                                                <primary>
+                                                                  <atom>
+                                                                    <integer literal>
+                                                                    </integer literal>
+                                                                  </atom>
+                                                                </primary>
+                                                              </factor>
+                                                            </term>
+                                                          </comparison>
+                                                        </not test>
+                                                      </and test>
+                                                    </expr>
+                                                  </arguments>
+                                                </primary suffix>
+                                              </primary>
+                                            </factor>
+                                          </term>
+                                        </comparison>
+                                      </not test>
+                                    </and test>
+                                  </expr>
+                                </assignment>
+                              </small stmt>
+                            </small stmt list>
+                          </stmt>
+  29:           n_printed = n_printed + 1
+                          <stmt>
+                            <small stmt list>
+                              <small stmt>
+                                <assignment>
+                                  <name>
+                                  </name>
+                                  <expr>
+                                    <and test>
+                                      <not test>
+                                        <comparison>
+                                          <term>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <name>
+                                                  </name>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                            <term opr>
+                                            </term opr>
+                                            <factor>
+                                              <primary>
+                                                <atom>
+                                                  <integer literal>
+                                                  </integer literal>
+                                                </atom>
+                                              </primary>
+                                            </factor>
+                                          </term>
+                                        </comparison>
+                                      </not test>
+                                    </and test>
+                                  </expr>
+                                </assignment>
+                              </small stmt>
+                            </small stmt list>
+                          </stmt>
+  30:     print(line_buf)
+                        </suite>
+                      </if stmt>
+                    </compound stmt>
+                  </stmt>
+                </suite>
+              </for stmt>
+            </compound stmt>
+          </stmt>
+          <stmt>
+            <small stmt list>
+              <small stmt>
+                <expr stmt>
+                  <expr>
+                    <and test>
+                      <not test>
+                        <comparison>
+                          <term>
+                            <factor>
+                              <primary>
+                                <atom>
+                                  <name>
+                                  </name>
+                                </atom>
+                                <primary suffix>
+                                  <arguments>
+                                    <expr>
+                                      <and test>
+                                        <not test>
+                                          <comparison>
+                                            <term>
+                                              <factor>
+                                                <primary>
+                                                  <atom>
+                                                    <name>
+                                                    </name>
+                                                  </atom>
+                                                </primary>
+                                              </factor>
+                                            </term>
+                                          </comparison>
+                                        </not test>
+                                      </and test>
+                                    </expr>
+                                  </arguments>
+                                </primary suffix>
+                              </primary>
+                            </factor>
+                          </term>
+                        </comparison>
+                      </not test>
+                    </and test>
+                  </expr>
+                </expr stmt>
+              </small stmt>
+            </small stmt list>
+          </stmt>
+  31: 
+  32: find_primes()
+        </suite>
+      </func def>
+    </compound stmt>
+  </stmt>
+  <stmt>
+    <small stmt list>
+      <small stmt>
+        <expr stmt>
+          <expr>
+            <and test>
+              <not test>
+                <comparison>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <name>
+                          </name>
+                        </atom>
+                        <primary suffix>
+                          <arguments>
+                          </arguments>
+                        </primary suffix>
+                      </primary>
+                    </factor>
+                  </term>
+                </comparison>
+              </not test>
+            </and test>
+          </expr>
+        </expr stmt>
+      </small stmt>
+    </small stmt list>
+  </stmt>
+  33: list_primes()
+  <stmt>
+    <small stmt list>
+      <small stmt>
+        <expr stmt>
+          <expr>
+            <and test>
+              <not test>
+                <comparison>
+                  <term>
+                    <factor>
+                      <primary>
+                        <atom>
+                          <name>
+                          </name>
+                        </atom>
+                        <primary suffix>
+                          <arguments>
+                          </arguments>
+                        </primary suffix>
+                      </primary>
+                    </factor>
+                  </term>
+                </comparison>
+              </not test>
+            </and test>
+          </expr>
+        </expr stmt>
+      </small stmt>
+    </small stmt list>
+  </stmt>
+</program>
+
+n = 1000
+primes = [True] * (n + 1)
+def find_primes (): 
+  for i1 in range(2, n + 1): 
+    i2 = i1 * i1
+    while i2 <= n: 
+      primes[i2] = False
+      i2 = i2 + i1
+
+def format (n, w): 
+  res = str(n)
+  while len(res) < w: res = " " + res
+  return res
+
+def list_primes (): 
+  n_printed = 0
+  line_buf = ""
+  for i in range(2, n + 1): 
+    if primes[i]: 
+      if n_printed > 0 and n_printed % 10 == 0: 
+        print(line_buf)
+        line_buf = ""
+      line_buf = line_buf + format(i, 4)
+      n_printed = n_printed + 1
+  print(line_buf)
+
+find_primes()
+list_primes()
